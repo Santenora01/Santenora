@@ -11,14 +11,8 @@ type PageTemplateProps = {
 const PageTemplate = ({ children }: PageTemplateProps) => {
   return (
     <div className={styles.pageWrapper}>
-      <div className={styles.backgroundOverlay}></div>
-
-      <div className={styles.headerWrapper}>
-        <Header logo={"SANTENORA"} links={links} />
-      </div>
-
+      <Header logo={"SANTENORA"} links={links} />
       <main className={styles.mainContent}>{children}</main>
-
       <Footer />
     </div>
   );
