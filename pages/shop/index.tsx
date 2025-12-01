@@ -54,7 +54,6 @@ export const getStaticProps = async () => {
     /\.(jpg|jpeg|png|webp|gif)$/i.test(file)
   )
 
-  // Numerinis rūšiavimas pagal 'shop' + skaičius, pvz. shop1.jpg, shop2.jpg
   imageFiles.sort((a, b) => {
     const aNum = parseInt(a.replace('shop', '').replace(/\D/g, ''), 10)
     const bNum = parseInt(b.replace('shop', '').replace(/\D/g, ''), 10)

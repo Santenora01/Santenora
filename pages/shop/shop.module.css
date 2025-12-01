@@ -19,9 +19,21 @@
   transform: scale(1.02);
 }
 
+@media (max-width: 1024px) {
+  .image{
+    margin: auto;
+     margin-bottom: 16px;
+  }
+  .grid {
+    column-count: 2;
+  }
+}
 
-
-/* Lightbox modal */
+@media (max-width: 640px) {
+  .grid {
+    column-count: 1;
+  }
+}
 
 .lightbox {
   position: fixed;

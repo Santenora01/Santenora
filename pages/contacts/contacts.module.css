@@ -1,0 +1,29 @@
+.box {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(6px);
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    display: inline-block; 
+}
+
+.main{
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+   padding-top: 1rem; 
+}
+
+.main a{
+    color: black;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.hours {
+    display: grid;
+    grid-template-columns: 160px auto;
+    row-gap: 3px ; 
+    font-size: 20px;
+    font-weight: 600;
+}

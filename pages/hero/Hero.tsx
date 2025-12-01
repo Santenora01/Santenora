@@ -1,9 +1,7 @@
 import React, {} from "react";
-// import axios from "axios";
 import styles from "./Hero.module.css";
 import PageTemplate from "../../components/PageTemplate/PageTemplate";
 import ServiceCardWrapper from "../../components/ServiceCardWrapper/ServiceCardWrapper";
-// import Link from "next/link";
 
 const Hero = () => {
     return(
