@@ -70,7 +70,15 @@
   display: none;
 }
 
-/* Mobile styles */
+.hoverScale {
+  display: inline-block;         
+  transition: transform 0.2s ease;
+}
+
+.hoverScale:hover {
+  transform: scale(1.05);        
+}
+
 @media (max-width: 850px) {
   .desktopNav {
     display: none;

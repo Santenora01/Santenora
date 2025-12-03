@@ -1,9 +1,18 @@
 .box {
     background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(9px);
     padding: 0.5rem 2rem;
     border-radius: 8px;
     display: inline-block; 
+} 
+
+.box a{
+    display: inline-block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.box a:hover {
+    transform: scale(1.02);
 }
 
 .main{

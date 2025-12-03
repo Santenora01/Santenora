@@ -24,13 +24,13 @@ const Header = ({ logo, links }: HeaderProps) => {
           <Link href="/">
             <Image
               alt="logo"
-              className={styles.logoImg}
+              className={`${styles.logoImg} ${styles.hoverScale}`}
               src="/assets/logo.jpg"
               width={100}
               height={250}
             />
           </Link>
-            <Link href="/" className={styles.logo}>
+            <Link href="/" className={`${styles.logo} ${styles.hoverScale}`}>
               {logo}
             </Link>
         </div>
@@ -46,7 +46,7 @@ const Header = ({ logo, links }: HeaderProps) => {
           <ul className={styles.nav}>
             {links.map((link) => (
               <li key={link.id}>
-                <Link href={link.href} className={styles.navLink}>
+                <Link href={link.href} className={`${styles.navLink} ${styles.hoverScale}`}>
                   {link.title}
                 </Link>
               </li>
