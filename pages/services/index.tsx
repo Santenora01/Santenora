@@ -28,17 +28,6 @@ const services = () => {
             <li>Greiti ir patikimi santechnikos darbai</li>
             <li>Kokybiški sprendimai jūsų namams</li>
           </ul>
-
-          <h4>Rimantas:</h4>
-          <h4>
-            <a href="tel:+370 672 03828"> +370 672 03828</a>
-          </h4>
-
-          <h4>Vygantas:</h4>
-          <h4>
-            <a href="+370 606 55648">+370 606 55648</a>
-          </h4>
-
         </div>
       </div>
     </PageTemplate>
