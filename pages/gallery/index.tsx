@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import fs from 'fs'
 import path from 'path'
 import styles from './gallery.module.css'
@@ -13,11 +14,17 @@ type Props = {
 }
 
 const Gallery: React.FC<Props> = ({ works }) => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null)
+
   return (
     <PageTemplate>
       <div className={styles.grid}>
         {works.map((work, index) => (
-          <div key={index} className={styles.card}>
+          <div
+            key={index}
+            className={styles.card}
+            onClick={() => setSelectedImage(`/img/gallery/${work.image}`)}
+          >
             <img
               src={`/img/gallery/${work.image}`}
               alt={`Atliktas darbas ${index + 1}`}
@@ -26,6 +33,28 @@ const Gallery: React.FC<Props> = ({ works }) => {
           </div>
         ))}
       </div>
+
+      {selectedImage && (
+        <div
+          className={styles.lightbox}
+          onClick={() => setSelectedImage(null)}
+        >
+          <img
+            src={selectedImage}
+            alt="Padidinta nuotrauka"
+            className={styles.lightboxImage}
+          />
+          <button
+            className={styles.closeButton}
+            onClick={(e) => {
+              e.stopPropagation()
+              setSelectedImage(null)
+            }}
+          >
+            ×
+          </button>
+        </div>
+      )}
     </PageTemplate>
   )
 }

@@ -1,8 +1,8 @@
 {
-  "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
+  "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/shop": "pages/shop.js",
-  "/gallery": "pages/gallery.js"
+  "/services": "pages/services.js",
+  "/gallery": "pages/gallery.js",
+  "/contacts": "pages/contacts.js"
 }
